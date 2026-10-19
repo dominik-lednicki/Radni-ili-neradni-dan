@@ -6,7 +6,7 @@ let listaDana = [
     "Ponedeljak",
     "Utorak",
     "Srijeda",
-    "Cetvrtak",
+    "Četvrtak",
     "Petak",
     "Subota",
 ];
@@ -27,4 +27,38 @@ if (dan == 0 || dan == 6) {
 
 if (porukeDana[dan]) {
     console.log(porukeDana[dan]);
+}
+
+// Dodatni:
+let unosKorisnika = prompt("Unesite broj dana ili naziv");
+
+function isADay(uneseniString) {
+    let check = false;
+    let intPosition = null;
+
+    for (let i = 0; i < listaDana.length; i++) {
+        if (
+            listaDana[i].toLocaleLowerCase() ==
+            uneseniString.toLocaleLowerCase()
+        ) {
+            check = true;
+            intPosition = i;
+            break;
+        }
+    }
+    return (check, intPosition);
+}
+
+if (unosKorisnika > 0 && unosKorisnika < 6) {
+    console.log("Uneseni dan je " + listaDana[unosKorisnika].toLowerCase());
+}
+
+let isGivenADay,
+    position = isADay(unosKorisnika);
+
+console.log(isGivenADay);
+console.log(position);
+
+if (isGivenADay) {
+    console.log("Uneseni dan ima broj: " + position);
 }
