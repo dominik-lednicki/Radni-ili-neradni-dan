@@ -49,14 +49,35 @@ function isADay(uneseniString) {
     return intPosition;
 }
 
-function numberToDay(uneseniBroj) {}
+function numberToDay(uneseniBroj) {
+    let counter = 1;
+    let daysCounter = 1;
 
-if (unosKorisnika > 0 && unosKorisnika < 16) {
-    console.log("Uneseni dan je " + listaDana[unosKorisnika].toLowerCase());
+    while (counter < uneseniBroj) {
+        counter++;
+        daysCounter++;
+        if (daysCounter > 7) {
+            daysCounter = 1;
+        }
+    }
+    console.log("Uneseni dan je " + listaDana[daysCounter].toLowerCase());
 }
 
 let position = isADay(unosKorisnika);
+let passed = false;
+
+if (unosKorisnika > 0 && unosKorisnika < 18) {
+    numberToDay(unosKorisnika);
+    passed = true;
+}
 
 if (position) {
     console.log("Uneseni dan ima broj: " + position);
+    passed = true;
+}
+
+if (passed == false) {
+    console.warn(
+        "Unesena stvar nije ispravna. Unesite ili broj od 1 do 17 ili ime dana.",
+    );
 }
