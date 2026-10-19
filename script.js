@@ -2,13 +2,14 @@ let date = new Date();
 let dan = date.getDay();
 
 let listaDana = [
-    "Nedelja",
+    "",
     "Ponedeljak",
     "Utorak",
     "Srijeda",
     "Četvrtak",
     "Petak",
     "Subota",
+    "Nedelja",
 ];
 
 let porukeDana = {
@@ -31,7 +32,6 @@ if (porukeDana[dan]) {
 
 // Dodatni:
 let unosKorisnika = prompt("Unesite broj dana ili naziv");
-
 function isADay(uneseniString) {
     let check = false;
     let intPosition = null;
@@ -49,7 +49,9 @@ function isADay(uneseniString) {
     return intPosition;
 }
 
-if (unosKorisnika > 0 && unosKorisnika < 6) {
+function numberToDay(uneseniBroj) {}
+
+if (unosKorisnika > 0 && unosKorisnika < 16) {
     console.log("Uneseni dan je " + listaDana[unosKorisnika].toLowerCase());
 }
 
