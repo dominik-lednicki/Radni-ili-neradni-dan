@@ -46,19 +46,15 @@ function isADay(uneseniString) {
             break;
         }
     }
-    return (check, intPosition);
+    return intPosition;
 }
 
 if (unosKorisnika > 0 && unosKorisnika < 6) {
     console.log("Uneseni dan je " + listaDana[unosKorisnika].toLowerCase());
 }
 
-let isGivenADay,
-    position = isADay(unosKorisnika);
+let position = isADay(unosKorisnika);
 
-console.log(isGivenADay);
-console.log(position);
-
-if (isGivenADay) {
+if (position) {
     console.log("Uneseni dan ima broj: " + position);
 }
