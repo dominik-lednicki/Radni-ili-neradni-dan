@@ -18,7 +18,7 @@ let porukeDana = {
     5: "Vikend na Vidiku!",
 };
 
-console.log(listaDana[dan]);
+console.log(listaDana[dan+1]);
 
 if (dan == 6 || dan == 7) {
     console.log("Neradni je dan");
@@ -26,8 +26,8 @@ if (dan == 6 || dan == 7) {
     console.log("Radni dan");
 }
 
-if (porukeDana[dan]) {
-    console.log(porukeDana[dan]);
+if (porukeDana[dan+1]) {
+    console.log(porukeDana[dan+1]);
 }
 
 // Dodatni:
