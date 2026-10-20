@@ -18,7 +18,12 @@ let porukeDana = {
     5: "Vikend na Vidiku!",
 };
 
+if(dan == 0){
+console.log("Danas je nedelja");
+} else {
+    
 console.log("Danas je "+(listaDana[dan]).toLocaleLowerCase());
+}
 
 if (dan == 6 || dan == 7) {
     console.log("Neradni je dan");
