@@ -62,6 +62,14 @@ function numberToDay(uneseniBroj) {
     }
   }
   console.log("Uneseni dan je " + listaDana[daysCounter].toLowerCase());
+  if (daysCounter == 6 || daysCounter == 7) {
+    console.log("Neradni je dan");
+    } else {
+    console.log("Radni dan");
+    }
+    if (porukeDana[daysCounter]) {
+  console.log(porukeDana[daysCounter]);
+}
 }
 
 let position = isADay(unosKorisnika);
