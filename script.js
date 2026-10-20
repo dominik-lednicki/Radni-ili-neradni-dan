@@ -20,7 +20,7 @@ let porukeDana = {
 
 console.log(listaDana[dan]);
 
-if (dan == 0 || dan == 6) {
+if (dan == 6 || dan == 7) {
     console.log("Neradni je dan");
 } else {
     console.log("Radni dan");
