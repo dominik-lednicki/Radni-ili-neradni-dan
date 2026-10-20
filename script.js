@@ -18,7 +18,7 @@ let porukeDana = {
     5: "Vikend na Vidiku!",
 };
 
-console.log("Danas je "+(listaDana[dan+1]).toLocaleLowerCase());
+console.log("Danas je "+(listaDana[dan]).toLocaleLowerCase());
 
 if (dan == 6 || dan == 7) {
     console.log("Neradni je dan");
@@ -26,8 +26,8 @@ if (dan == 6 || dan == 7) {
     console.log("Radni dan");
 }
 
-if (porukeDana[dan+1]) {
-    console.log(porukeDana[dan+1]);
+if (porukeDana[dan]) {
+    console.log(porukeDana[dan]);
 }
 
 // Dodatni zadatak:
