@@ -30,7 +30,7 @@ if (porukeDana[dan+1]) {
     console.log(porukeDana[dan+1]);
 }
 
-// Dodatni:
+// Dodatni zadatak:
 let unosKorisnika = prompt("Unesite broj dana ili naziv");
 function isADay(uneseniString) {
     let check = false;
